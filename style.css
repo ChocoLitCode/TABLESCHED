@@ -1,0 +1,113 @@
+/* Style Sheet: Weekly Schedule Table
+   Author: Josol, Trichelle Mae - BSCpE3A
+   Description:
+   Defines a color-coded weekly schedule layout with centered alignment,
+   rounded corners, and hover effects for better interaction. */
+
+/* Main Font Configuration */
+.alan-sans-main {
+  font-family: "Alan Sans", sans-serif; /* Sets the primary typeface */
+  font-optical-sizing: auto; /* Enables optical balance adjustment */
+  font-weight: 300; /* Light font weight for modern look */
+  font-style: normal; /* Regular upright font style */
+}
+
+/* Global Element Styling */
+* {
+  text-transform: uppercase; /* Converts all text to uppercase */
+  text-align: center; /* Centers text globally */
+  color: aliceblue; /* Default text color */
+  box-sizing: border-box; /* Ensures consistent box sizing */
+}
+
+/* Heading Styling */
+h1 {
+  color: #ff8c00; /* Dark orange heading color */
+  letter-spacing: 1px; /* Slight spacing for better readability */
+}
+
+/* Table Layout and Borders */
+table {
+  margin: auto; /* Centers the table on the page */
+  border-collapse: collapse; /* Removes double borders */
+}
+
+/* Table structure: rows, columns, and cells */
+table,
+td,
+tr {
+  border: 1px solid rgba(0, 0, 0, 0.42); /* Light border for structure */
+}
+
+/* Table Header Cells */
+th {
+  padding: 13px; /* Adds internal spacing */
+  letter-spacing: 1px; /* Improves header text spacing */
+  color: rgb(48, 222, 21); /* Green header text */
+  background: none; /* No background color */
+}
+
+/* Table Data Cells */
+td {
+  font-weight: 600; /* Slightly bold text for clarity */
+  border-radius: 12px; /* Rounded corners */
+  padding: 12px; /* Internal spacing */
+  transition: filter 0.3s ease; /* Smooth hover effect transition */
+}
+
+/* Hover Effect on Cells */
+td:hover {
+  filter: brightness(1.2); /* Increases brightness on hover */
+}
+
+/* Subject Color Palette */
+td#sub-one {
+  background-color: blueviolet; /* Deep violet */
+}
+
+td#sub-two {
+  background-color: blue; /* Solid blue */
+}
+
+td#sub-three {
+  background-color: #6a5acd; /* Slate blue */
+}
+
+td#sub-four {
+  background-color: #48d1cc; /* Medium turquoise */
+  color: rgb(61, 35, 35); /* Dark text for readability */
+}
+
+td#sub-five {
+  background-color: #ffd700; /* Gold */
+  color: brown; /* Brown text for contrast */
+}
+
+td#sub-six {
+  background-color: #ff8c00; /* Dark orange */
+  color: brown; /* Contrast text color */
+}
+
+td#sub-seven {
+  background-color: #dc143c; /* Crimson red */
+}
+
+td#sub-eight {
+  background-color: #8b008b; /* Dark magenta */
+}
+
+/* Table Container (Wrapper) */
+div {
+  padding: 20px; /* Adds spacing around the table */
+  background-color: rgb(51, 53, 54); /* Dark gray background */
+  border-radius: 34px; /* Rounded corners */
+  display: inline-block; /* Fits container to content size */
+  margin: auto; /* Centers the container */
+}
+
+/* Body Styling */
+body {
+  background-color: rgb(38, 35, 35); /* Dark background to highlight the table */
+}
+
+/* End of Stylesheet */

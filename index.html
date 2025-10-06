@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weekly Schedule</title>
+
+        <!-- External stylesheet that contains the main layout and color styles -->
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+
+        <!-- Import Alan Sans font from Google Fonts for a clean, modern look -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+        </style>
+    </head>
+       
+    <!-- Main body using Alan Sans font style for uniform typography --> 
+    <body class="alan-sans-main">
+         <!-- Page header section with the title of the schedule -->
+            <header>
+                <h1>Weekly Schedule</h1>
+            </header>
+        <div>
+            <!-- Main table displaying the weekly schedule layout -->
+            <table>
+                <!-- Table header row: labels each column by day of the week -->
+                <tr>
+                    <th></th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+
+                <!-- Each following table row represents a specific one-hour time block -->
+
+                <!-- 7:00 - 8:00 AM -->
+                <tr>
+                    <th>7:00 am - 8:00 am</th>
+                    <td>Biking</td> <!-- Sunday slot -->
+                    <td></td> <!-- Monday slot -->
+                    <td></td> <!-- Tuesday slot -->
+                    <td id="sub-three" rowspan="2">dcee25</td> <!-- Wednesday class from 7–9 AM -->
+                    <td></td> <!-- Thursday slot -->
+                    <td>Biking</td> <!-- Friday slot -->
+                    <td id="sub-seven" rowspan="5">dcee24</td> <!-- Saturday class from 7–12 PM -->
+                </tr>
+
+                <!-- 8:00 - 9:00 AM (Wed and Sat merged above) -->
+                <tr>
+                    <th>8:00 am - 9:00 am</th>
+                    <td>dog bath</td> 
+                    <td></td> 
+                    <td></td> 
+                    <td></td> 
+                    <td>dog walk</td> 
+                </tr>
+
+                <!-- 9:00 - 10:00 AM -->
+                <tr>
+                    <th>9:00 am - 10:00 am</th>
+                    <td>Laundry day</td> 
+                    <td></td> 
+                    <td id="sub-one" rowspan="2">cpen101</td> <!-- Tuesday class from 9–11 AM -->
+                    <td rowspan="2">vacant</td> <!-- Free period on Wednesday 9–11 AM -->
+                    <td id="sub-six" rowspan="4">cpen85</td> <!-- Thursday class from 9–1 PM -->
+                    <td>Laundry Day</td> 
+                </tr>
+
+                <!-- 10:00 - 11:00 AM -->
+                <tr>
+                    <th>10:00 am - 11:00 am</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <!-- 11:00 - 12:00 PM -->
+                <tr>
+                    <th>11:00 am - 12:00 pm</th>
+                    <td colspan="3">lunch</td>
+                    <td id="sub-four" rowspan="2">cpen90</td> <!-- Wednesday class from 11–1 PM -->
+                    <td>lunch</td>
+                </tr>
+
+                <!-- 12:00 - 1:00 PM -->
+                <tr>
+                    <th>12:00 pm - 1:00 pm</th>
+                    <td></td>
+                    <td></td>
+                    <td id="sub-two" rowspan="5">dcee75</td> <!-- Tuesday class from 12–5 PM -->
+                    <td></td>
+                    <td rowspan="3">vacant</td> <!-- Saturday free period from 12–3 PM -->
+                </tr>
+
+                <!-- 1:00 - 2:00 PM -->
+                <tr>
+                    <th>1:00 pm - 2:00 pm</th>
+                    <td></td>
+                    <td></td>
+                    <td id="sub-five" rowspan="2">cpen80</td> <!-- Wednesday class from 1–3 PM -->
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <!-- 2:00 - 3:00 PM -->
+                <tr>
+                    <th>2:00 pm - 3:00 pm</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <!-- 3:00 - 4:00 PM -->
+                <tr>
+                    <th>3:00 pm - 4:00 pm</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td id="sub-eight" rowspan="2">math14</td> <!-- Saturday class from 3–5 PM -->
+                </tr>
+
+                <!-- 4:00 - 5:00 PM -->
+                <tr>
+                    <th>4:00 pm - 5:00 pm</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <!-- 5:00 - 6:00 PM -->
+                <tr>
+                    <th>5:00 pm - 6:00 pm</th>
+                    <td colspan="2">Dog Walk</td>
+                    <td></td>
+                    <td colspan="3">Dog walk</td>
+                    <td></td>
+                </tr>
+
+                <!-- 6:00 - 7:00 PM -->
+                <tr>
+                    <th>6:00 pm - 7:00 pm</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
+<!--Coded by Josol,Trichelle Mae - BSCpE3A-->
