@@ -1,113 +1,137 @@
-/* Style Sheet: Weekly Schedule Table
-   Author: Josol, Trichelle Mae - BSCpE3A
-   Description:
-   Defines a color-coded weekly schedule layout with centered alignment,
-   rounded corners, and hover effects for better interaction. */
+/* ===== TYPOGRAPHY CONFIGURATION ===== */
 
 /* Main Font Configuration */
 .alan-sans-main {
   font-family: "Alan Sans", sans-serif; /* Sets the primary typeface */
-  font-optical-sizing: auto; /* Enables optical balance adjustment */
-  font-weight: 300; /* Light font weight for modern look */
+  font-optical-sizing: auto; /* Enables optical balance adjustment for better readability */
+  font-weight: 300; /* Light font weight for modern, clean look */
   font-style: normal; /* Regular upright font style */
 }
 
+/* ===== GLOBAL STYLES & RESET ===== */
+
 /* Global Element Styling */
 * {
-  text-transform: uppercase; /* Converts all text to uppercase */
-  text-align: center; /* Centers text globally */
-  color: aliceblue; /* Default text color */
-  box-sizing: border-box; /* Ensures consistent box sizing */
+  text-transform: uppercase; /* Converts all text to uppercase for consistent appearance */
+  text-align: center; /* Centers text globally throughout the page */
+  color: aliceblue; /* Default text color - light blueish-white for contrast */
+  box-sizing: border-box; /* Ensures consistent box sizing including padding and borders */
 }
+
+/* ===== HEADING STYLES ===== */
 
 /* Heading Styling */
 h1 {
-  color: #ff8c00; /* Dark orange heading color */
-  letter-spacing: 1px; /* Slight spacing for better readability */
+  color: #ff8c00; /* Dark orange heading color for visual hierarchy */
+  letter-spacing: 1px; /* Slight spacing between letters for better readability */
 }
+
+/* ===== TABLE STRUCTURE & LAYOUT ===== */
 
 /* Table Layout and Borders */
 table {
-  margin: auto; /* Centers the table on the page */
-  border-collapse: collapse; /* Removes double borders */
+  margin: auto; /* Centers the table horizontally on the page */
+  border-collapse: collapse; /* Removes double borders between adjacent cells */
 }
 
 /* Table structure: rows, columns, and cells */
 table,
 td,
 tr {
-  border: 1px solid rgba(0, 0, 0, 0.42); /* Light border for structure */
+  border: 1px solid rgba(0, 0, 0, 0.42); /* Light semi-transparent border for structure definition */
 }
+
+/* ===== TABLE HEADER STYLES ===== */
 
 /* Table Header Cells */
 th {
-  padding: 13px; /* Adds internal spacing */
-  letter-spacing: 1px; /* Improves header text spacing */
-  color: rgb(48, 222, 21); /* Green header text */
-  background: none; /* No background color */
+  padding: 13px; /* Adds internal spacing for comfortable content display */
+  letter-spacing: 1px; /* Improves header text spacing for better legibility */
+  color: rgb(48, 222, 21); /* Green header text color for distinct visual separation */
+  background: none; /* No background color to maintain transparency */
 }
+
+/* ===== TABLE DATA CELL STYLES ===== */
 
 /* Table Data Cells */
 td {
-  font-weight: 600; /* Slightly bold text for clarity */
-  border-radius: 12px; /* Rounded corners */
-  padding: 12px; /* Internal spacing */
-  transition: filter 0.3s ease; /* Smooth hover effect transition */
+  font-weight: 600; /* Slightly bold text for better clarity and emphasis */
+  border-radius: 12px; /* Rounded corners for modern, soft appearance */
+  padding: 12px; /* Internal spacing for content breathing room */
+  transition: all 0.3s ease; /* Smooth hover effect transition for all properties */
+  position: relative; /* Enables z-index and transform for advanced positioning */
 }
 
-/* Hover Effect on Cells */
+/* ===== HOVER EFFECTS & INTERACTIONS ===== */
+
+/* Enhanced Hover Effect on Cells with Pop-up */
 td:hover {
-  filter: brightness(1.2); /* Increases brightness on hover */
+  filter: brightness(1.2); /* Increases brightness on hover for visual feedback */
+  background-color: rgb(60, 59, 59); /* Dark gray background on hover for contrast */
+  font-size: 1.1em; /* Increases text size by 10% for emphasis */
 }
 
-/* Subject Color Palette */
+/* Subject-specific Hover Effects */
+td[id*="sub-"]:hover {
+  filter: brightness(1.3); /* Stronger brightness increase for subject cells */
+  transform: translateY(-5px) scale(1.05); /* Lift and scale effect for 3D pop-up appearance */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Shadow for depth perception and visual separation */
+}
+
+/* ===== SUBJECT COLOR CODING SYSTEM ===== */
+
+/* Subject Color Palette - Each subject has unique color for quick identification */
 td#sub-one {
-  background-color: blueviolet; /* Deep violet */
+  background-color: blueviolet; /* Deep violet - Subject 1 identifier */
 }
 
 td#sub-two {
-  background-color: blue; /* Solid blue */
+  background-color: blue; /* Solid blue - Subject 2 identifier */
 }
 
 td#sub-three {
-  background-color: #6a5acd; /* Slate blue */
+  background-color: #6a5acd; /* Slate blue - Subject 3 identifier */
 }
 
 td#sub-four {
-  background-color: #48d1cc; /* Medium turquoise */
-  color: rgb(61, 35, 35); /* Dark text for readability */
+  background-color: #48d1cc; /* Medium turquoise - Subject 4 identifier */
+  color: rgb(61, 35, 35); /* Dark text for readability against light background */
 }
 
 td#sub-five {
-  background-color: #ffd700; /* Gold */
-  color: brown; /* Brown text for contrast */
+  background-color: #ffd700; /* Gold - Subject 5 identifier */
+  color: brown; /* Brown text for contrast against yellow background */
 }
 
 td#sub-six {
-  background-color: #ff8c00; /* Dark orange */
-  color: brown; /* Contrast text color */
+  background-color: #ff8c00; /* Dark orange - Subject 6 identifier */
+  color: brown; /* Brown text for contrast against orange background */
 }
 
 td#sub-seven {
-  background-color: #dc143c; /* Crimson red */
+  background-color: #dc143c; /* Crimson red - Subject 7 identifier */
 }
 
 td#sub-eight {
-  background-color: #8b008b; /* Dark magenta */
+  background-color: #8b008b; /* Dark magenta - Subject 8 identifier */
 }
+
+/* ===== LAYOUT CONTAINERS ===== */
 
 /* Table Container (Wrapper) */
 div {
-  padding: 20px; /* Adds spacing around the table */
-  background-color: rgb(51, 53, 54); /* Dark gray background */
-  border-radius: 34px; /* Rounded corners */
-  display: inline-block; /* Fits container to content size */
-  margin: auto; /* Centers the container */
+  padding: 20px; /* Adds spacing around the table for visual separation */
+  background-color: rgb(51, 53, 54); /* Dark gray background for container contrast */
+  border-radius: 34px; /* Rounded corners for modern container appearance */
+  display: inline-block; /* Fits container to content size rather than full width */
+  margin: auto; /* Centers the container horizontally */
 }
+
+/* ===== PAGE BACKGROUND & BASE STYLING ===== */
 
 /* Body Styling */
 body {
-  background-color: rgb(38, 35, 35); /* Dark background to highlight the table */
+  background-color: rgb(38, 35, 35); /* Dark background to highlight and contrast the table */
 }
 
-/* End of Stylesheet */
+/* ===== END OF STYLESHEET ===== */
